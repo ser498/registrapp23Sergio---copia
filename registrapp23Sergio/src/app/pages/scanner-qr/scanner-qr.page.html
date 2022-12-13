@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" mode="md">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>asistencia</ion-title>
+    <ion-icon class="ion-padding" name="qr-code" size="medium" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-card>
+    <ion-card-header>
+      <h4>Alumno: {{nombreAlumno}}</h4>
+      <h2 style="font-weight: bold;">Clase: {{nombreCur}}</h2>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="./assets/img/56d6af0d-7acc-4ec3-9c52-7cc10a37d583-1653636637866.jpg" alt="">
+    </ion-card-content>
+  </ion-card>
+  <ion-button class="ion-padding" (click)="test(); showLoading()" size="block" style="height: 13%;" color="dark">Escanear código</ion-button>
+</ion-content>
